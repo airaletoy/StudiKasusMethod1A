@@ -1,0 +1,32 @@
+/*
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
+ */
+package main2;
+import java.util.Scanner;
+/**
+ *
+ * @author USER
+ */
+public class Luaspermutabung {
+    double r, t;
+    double hasil;
+    
+    void input(){
+        System.out.println("Silahkan memasukkan jari-jari dan tinggi tabung");
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Jari-jari = ");
+        r = sc.nextDouble();
+        System.out.println("Tinggi = ");
+        t = sc.nextDouble();
+    }
+    void hitung(){
+        System.out.println("Saatnya proses menghitung");
+        hasil = (r+t)*2*r*3.14;
+    }
+    double Hasil(){
+        return hasil;
+    }
+}
+
